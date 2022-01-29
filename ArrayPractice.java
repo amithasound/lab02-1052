@@ -16,7 +16,7 @@ public class ArrayPractice {
 		for (int row = 0; row < matrix.length; row++) {
 		    for (int col = 0; col < matrix[row].length; col++) {
 		        matrix[row][col] = (int) ((Math.random() * 100)+ 1) ;
-		    }
+		    } //fills array with random values in the range of 1-100 inclusive
 		}
 		
 		for (int row = 0; row < matrix.length; row++) {
@@ -24,16 +24,16 @@ public class ArrayPractice {
 		        System.out.print(matrix[row][col] + "  ");
 
 		    System.out.println();
-		}
+		} //printing array
 		
 		for(int i = 0; i < matrix.length; i++) {
 			int sum = 0;
-			int [] temp = matrix[i];
+			int [] temp = matrix[i];//array of the row i of matrix
 			
 			for(int j = 0; j< matrix.length; j++) {
-				sum += temp[j];
+				sum += temp[j]; //sum of the temp array
 			}
-			if(sum > rowSum) {
+			if(sum > rowSum) {//if sum of temp array > highest row sum (rowSum)
 				rowSum = sum; 
 				rowOfSum = i;
 			}
@@ -42,13 +42,13 @@ public class ArrayPractice {
 		
 		
 		
-		for(int i = 0; i <  matrix.length; i++) {
+		for(int i = 0; i <  matrix.length; i++) { 
 			int sumTwo = 0;
 			for(int j = 0; j<  matrix.length; j++){
-				sumTwo += matrix[j][i];
+				sumTwo += matrix[j][i]; //sums column 
 			}
 			
-			if(sumTwo > colSum){
+			if(sumTwo > colSum){ //if sum column > highest col sum(colSum)
 				colSum = sumTwo;
 				colOfSum = i;
 			}
@@ -56,8 +56,8 @@ public class ArrayPractice {
 		}
 			
 		
-		System.out.println("Row of sum is " + rowSum + " at row " + rowOfSum);
-		System.out.println("Col of sum is " + colSum + " at row " + colOfSum);
+		System.out.println("Mac row sum is: " + rowSum + " at row: " + rowOfSum);
+		System.out.println("Col row sum is " + colSum + " at row: " + colOfSum);
 		
 		
 		
