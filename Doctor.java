@@ -18,7 +18,7 @@ public class Doctor extends Person {
 	public String toString() {
 		String description = super.toString();
 		
-		return   "Dr. " + description ;
+		return   "Dr. " + description + " Hospital: " + hospital + ", Speciality: " + specialty ;
 		
 	}
 	

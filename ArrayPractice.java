@@ -56,8 +56,8 @@ public class ArrayPractice {
 		}
 			
 		
-		System.out.println("Mac row sum is: " + rowSum + " at row: " + rowOfSum);
-		System.out.println("Col row sum is " + colSum + " at row: " + colOfSum);
+		System.out.println("Max row sum is: " + rowSum + " at row: " + rowOfSum);
+		System.out.println("Max col row sum is " + colSum + " at row: " + colOfSum);
 		
 		
 		

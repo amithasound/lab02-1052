@@ -18,7 +18,7 @@ public class Professor extends Person {
 	public String toString() {
 		String description = super.toString();
 		
-		return   "Prof. " + description ;
+		return   "Prof. " + description + ", University :" + university + ", Department: " + department;
 		
 	}
 	

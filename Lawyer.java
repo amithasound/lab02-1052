@@ -17,7 +17,16 @@ public class Lawyer extends Person {
 	public String toString() {
 		String description = super.toString();
 		
-		return description +  ", Esq." ;
+		return description +  ", Esq." + " Law firm: "  + lawFirm + " , Years experience: " + yearsExperience;
+		
+		
+		
+		//return "Age: " + getAge() + " Name:  " + getName() + ", Esq." + " Law firm: "  + lawFirm + " , Years experience: " + yearsExperience;
+		// has a logic error through calling the super class toString because esq is appended to the age instead of the name that could be fixed using code above
+		// to fix the logic error I could make getters for age and name and override the toString but not call the super 
+		
+		
+		
 		
 	}
 	

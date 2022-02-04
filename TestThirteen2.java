@@ -21,7 +21,7 @@ public class TestThirteen2 {
 						
 				}
 						
-			 throw new ThirteenException("The length of the string is 13");
+			 throw new ThirteenException("The length of the string is 13 and cannot be exactly 13");
 					
 					
 			}catch(ThirteenException e){
